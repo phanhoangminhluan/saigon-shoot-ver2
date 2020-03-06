@@ -1,0 +1,14 @@
+/*.current-information-content #carouselExampleControls .carousel-inner {*/
+/*    max-height: 800px;*/
+/*}*/
+#slider-place .owl-nav {
+    background: #B3B3B3 !important;
+    margin-top: 0px !important;
+}
+.owl-nav {
+    display: block!important;
+}
+
+.owl-nav .button span {
+    font-size: 45px!important;
+}

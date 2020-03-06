@@ -1,0 +1,97 @@
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+.mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-size: 16;
+    font-weight: 400;
+    overflow: hidden;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.all {
+    overflow: auto;
+    height: 100vh;
+    background-image: url('./../img/background.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-color:rgba(179,179,179,1)
+}
+.headings {
+    font-family: "Oswald", sans-serif !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 35px;
+}
+.float-popup,
+.product-detail-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 50%;
+    z-index: 10000;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    color: white;
+}
+
+.float-popup {
+    height: 450px;
+    background: #b3b3b3;
+}
+.custom_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 1920px) {
+    .custom_container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .custom_container {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.move-link {
+    position: absolute;
+    height: 100px;
+    z-index: 101111;
+    top: 0;
+    transform: translateY(-100%);
+}

@@ -1,0 +1,109 @@
+.custom_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.fab_detail {
+    position: relative;
+}
+.fab_detail:hover .fab_hover {
+    opacity: 1;
+    visibility: visible;
+}
+.fab_detail:hover .fab_hover .fab_hover_text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(30%);
+}
+.fab_detail:hover .fab_hover .fab_hover_desc {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(140%);
+}
+.fab_detail:hover .fab_hover .icon_social {
+    transform: translate(-50%, 1100%);
+}
+.fab_detail img {
+    width: 100%;
+}
+.fab_detail .label {
+    background-color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+.fab_detail .label h5 {
+    color: white;
+    font-size: 14px;
+}
+.fab_detail .label span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+.fab_detail .fab_hover {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.fab_hover .fa-external-link:hover {
+    color: #d6b161;
+    cursor: pointer;
+}
+.fab_detail .fab_hover .fab_hover_text {
+    transform: translateY(-30%);
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.fab_detail .fab_hover .fab_hover_text .fab_hover_title {
+    font-size: 24px;
+    line-height: 21px;
+    color: #222;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+.fab_detail .fab_hover .fab_hover_text .fab_hover_desc {
+    font-size: 34px;
+    line-height: 30px;
+    color: #7e7e7e;
+    transition: all 0.3s;
+}
+.fab_hover_desc p {
+    color: #7e7e7e !important;
+}
+.fab_detail .fab_hover .icon_social {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 1400%);
+    transition: all 0.3s;
+}
+.fab_detail .fab_hover .icon_social i {
+    transition: all 0.2s;
+    cursor: pointer !important;
+}
+.fab_detail .fab_hover .icon_social i:hover {
+    color: #d6b161;
+}
+.fab_detail .label p{
+    margin-bottom: 0px;
+}

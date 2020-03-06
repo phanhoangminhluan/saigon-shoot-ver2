@@ -1,0 +1,84 @@
+.services, .products {
+    width: 50%;
+}
+.serivce-product-content {
+    margin: 15px auto;
+    color: white;
+}
+.service-scrollbar,
+.product-scrollbar {
+    overflow: auto;
+    height: 1000px;
+    text-align: center;
+}
+.service-scrollbar {
+    margin-right: 40px;
+}
+.product-scrollbar {
+    margin-left: 40px;
+}
+.service-product-row {
+    overflow: hidden;
+}
+.service-product-detail {
+    overflow: auto;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.service-product-detail img {
+    width: 100%;
+    height: 100%;
+}
+.serivce-product-detail-hover {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transition: all 0.3s;
+}
+.serivce-product-detail-hover > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    transition: all 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+}
+.serivce-product-detail-hover > i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.product-detail {
+    background: none;
+}
+.product-detail a {
+    color: white;
+    text-align: right;
+}
+.product-detail a:hover {
+    color: white;
+    /* text-decoration: none; */
+}
+.product-detail-popup  {
+    height: auto;
+}
+
+
+.ol-circle {
+    list-style-type: circle;
+    padding-bottom: 0;
+}
+.ol-circle li {
+    margin-left:2em;
+}
