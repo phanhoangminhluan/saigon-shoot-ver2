@@ -34,7 +34,7 @@ class MainController{
         this.$all.mCustomScrollbar({
             autoHideScrollbar: !0,
             theme: "light",
-            mouseWheel: { preventDefault: true }
+            mouseWheel: { preventDefault: true },
         });
         this.$floatPopup.mCustomScrollbar({
             scrollButtons: { enable: !0 },

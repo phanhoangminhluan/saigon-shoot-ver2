@@ -1,0 +1,14 @@
+.list-news {
+
+}
+
+@media screen and (max-width: 375px) {
+    .list-news {
+        display: grid !important;
+        grid-template-columns: 1fr;
+
+    }
+    .list-news .fb-page {
+        margin-bottom: 20px;
+    }
+}

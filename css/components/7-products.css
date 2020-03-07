@@ -1,0 +1,8 @@
+.product-detail-popup iframe {
+    height: 500px;
+}
+@media screen and (max-width: 375px) {
+    .product-detail-popup iframe {
+        height: auto;
+    }
+}
