@@ -1,0 +1,6 @@
+@media screen and (max-width: 375px) {
+   .associate-row {
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 15px;
+   }
+}

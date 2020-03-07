@@ -59,7 +59,7 @@ const TemplateUtil = {
         </div>
     `,
     SLIDER: `
-        <div class="item" style='height:800px'>
+        <div class="item">
             <img src="./img/<%=sliderImg%>" class="d-block w-100"  alt="...">
         </div> 
     `,

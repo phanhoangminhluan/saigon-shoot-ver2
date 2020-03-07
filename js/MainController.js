@@ -20,9 +20,13 @@ class MainController{
     render() {
         this.slider.render().applyCarousel(); 
         this.associate.render();
-        this.product.render().applyScrollbar();  
-        this.service.render().applyScrollbar();
+        this.product.render();
+        this.service.render();
         this.human.render().applyCarousel();
+        if (!this.isMobile()) {
+            this.product.applyScrollbar();
+            this.service.applyScrollbar();
+        }
         return this;
     }
     
@@ -99,5 +103,36 @@ class MainController{
             $(".second-flag").css(_this.hideObj);
         });
         return this;
+    }
+    isMobile() {
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
+       if (isMobile.iOS() || isMobile.Android) {
+           return true;
+       }
+       var width = window.innerWidth;
+       if (width <= 375){
+           return true;
+       }
+       return false;
     }
 }

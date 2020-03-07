@@ -82,3 +82,20 @@
 .ol-circle li {
     margin-left:2em;
 }
+
+@media screen and (max-width: 375px) {
+    .services-product {
+        display: grid !important;
+        grid-template-columns: 1fr;
+    }
+    .services {
+        width: 100%;
+    }
+    .products {
+        width: 100%;
+    }
+    .product-scrollbar, .service-scrollbar {
+        margin: 0px;
+        height: auto;
+    }
+}

@@ -88,6 +88,22 @@ body {
         padding-right: 30px;
     }
 }
+@media screen and (max-width: 375px) {
+    .float-popup {
+        width: 90%;
+        font-size: 15px;
+        height: 250px;
+    }
+    .float-popup .mCSB_container {
+        padding-right: 20px;
+    }
+    .headings {
+        font-size: 25px;
+    }
+    .custom_container {
+       padding-bottom: 0px;
+    }
+}
 .move-link {
     position: absolute;
     height: 100px;

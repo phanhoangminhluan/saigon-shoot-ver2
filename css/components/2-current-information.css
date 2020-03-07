@@ -12,3 +12,13 @@
 .owl-nav .button span {
     font-size: 45px!important;
 }
+@media screen and (max-width: 1920px) {
+    #slider-place .owl-item .item {
+        height: 800px;
+    }
+}
+@media screen and (max-width: 375px) {
+    #slider-place .owl-item .item {
+        height: auto;
+    }
+}
