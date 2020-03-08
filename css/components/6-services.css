@@ -80,7 +80,7 @@
     margin-left:2em;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 441px) {
     .services-product {
         display: grid !important;
         grid-template-columns: 1fr;
@@ -94,5 +94,15 @@
     .product-scrollbar, .service-scrollbar {
         margin: 0px;
         height: auto;
+    }
+    .serivce-product-detail-hover {
+        height: 50px;
+        border: 10px solid rgba(0, 0, 0, 0.3);
+    }
+    .serivce-product-detail-hover p {
+       font-size: 13px;
+    }
+    .serivce-product-detail-hover > i {
+        font-size: 15px;
     }
 }

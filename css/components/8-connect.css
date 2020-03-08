@@ -2,7 +2,7 @@
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 441px) {
     .list-news {
         display: grid !important;
         grid-template-columns: 1fr;

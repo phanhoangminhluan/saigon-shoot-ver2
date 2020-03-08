@@ -41,7 +41,8 @@ class Product {
         });
 
     }
-    applyScrollbar() {
+    applyScrollbar(isMobile) {
+        if (isMobile) return this;
          $(".product-scrollbar").mCustomScrollbar({
              scrollButtons: { enable: !0 },
              theme: "dark-thick",

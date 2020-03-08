@@ -218,3 +218,24 @@ const associates = [
         assImage: "doitac-10.png"
     }
 ];
+
+const fanpages = [
+    {
+        name: "The Camera Studio",
+        link: "https://www.facebook.com/TheCameraStudio.Official/",
+        tab: "timeline",
+        width: 340
+    },
+    {
+        name: "Saigon Shoot",
+        link: "https://www.facebook.com/SaigonShoot/",
+        tab: "timeline",
+        width: 340
+    },
+    {
+        name: "The Camera House's",
+        link: "https://www.facebook.com/TheCameraHouses/",
+        tab: "timeline",
+        width: 340
+    }
+]

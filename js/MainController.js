@@ -16,17 +16,16 @@ class MainController{
         this.product = new Product();
         this.service = new Service();
         this.human = new Human();
+        this.fanpage = new Fanpage();
     }
     render() {
+        const isMobile = this.isMobile();
         this.slider.render().applyCarousel(); 
         this.associate.render();
-        this.product.render();
-        this.service.render();
+        this.product.render().applyScrollbar(isMobile);
+        this.service.render().applyScrollbar(isMobile);
         this.human.render().applyCarousel();
-        if (!this.isMobile()) {
-            this.product.applyScrollbar();
-            this.service.applyScrollbar();
-        }
+        this.fanpage.render(isMobile);
         return this;
     }
     
@@ -126,13 +125,13 @@ class MainController{
             }
         };
 
-       if (isMobile.iOS() || isMobile.Android) {
+       // if (isMobile.iOS() || isMobile.Android) {
+       //     return true;
+       // }
+        const width = window.innerWidth;
+        if (width <= 414) {
            return true;
-       }
-       var width = window.innerWidth;
-       if (width <= 375){
-           return true;
-       }
+        }
        return false;
     }
 }

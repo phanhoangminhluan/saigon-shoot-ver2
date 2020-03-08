@@ -65,5 +65,23 @@ const TemplateUtil = {
     `,
     ASSCOCIATE: `
         <div> <img id="" src="./img/<%=assImage%>" alt=""></div>
+    `,
+    FANPAGE : `
+          <div 
+                class="fb-page" 
+                data-href="<%=link%>" 
+                data-tabs="" 
+                data-width="<%=width%>" 
+                data-height="" 
+                data-small-header="true" 
+                data-adapt-container-width="false" 
+                data-hide-cover="false" 
+                data-show-facepile="true">
+                    <blockquote 
+                        cite="<%=link%>" 
+                        class="fb-xfbml-parse-ignore">
+                        <a href="<%=link%>"><%=name%></a>
+                    </blockquote>
+            </div>
     `
 };

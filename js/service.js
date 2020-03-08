@@ -32,7 +32,8 @@ class Service {
         });
     }
 
-    applyScrollbar() {
+    applyScrollbar(isMobile) {
+        if (isMobile) return this;
          $(".service-scrollbar").mCustomScrollbar({
              scrollButtons: { enable: !0 },
              theme: "dark-thick",

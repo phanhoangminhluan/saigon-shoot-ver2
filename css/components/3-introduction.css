@@ -29,8 +29,11 @@
 }
 /* END OF ASSOCIATES*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 441px) {
     .headings-black {
         font-size: 25px;
+    }
+    .intro-text {
+        text-align: justify;
     }
 }
