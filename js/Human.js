@@ -46,9 +46,9 @@ class Human {
             loop: true,
             margin: 10,
             dots: false,
-            // autoplay: true,
+            autoplay: true,
             autoplayHoverPause: true,
-            // autoplayTimeout: 3000,
+            autoplayTimeout: 3000,
             mouseDrag: false,
             responsive: {
                 0: {
