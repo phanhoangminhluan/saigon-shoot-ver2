@@ -34,7 +34,7 @@ const TemplateUtil = {
                 <img src="./img/<%= humanImage %>" alt="">
                 <div class="label">
                     <h5>
-                        <%= humanName %>
+                        <%= humanName %> <i class="fa fa-external-link" id="<%= humanId %>"></i>
                     </h5>
                     <span>
                         <%= humanTitle %>

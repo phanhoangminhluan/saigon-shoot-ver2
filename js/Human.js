@@ -7,7 +7,7 @@ class Human {
         this.$humanDetail = $(".human-detail-popup");
         this.$overlay = $(".overlay");
     }
-    render() {
+    render(isMobile) {
         
         humans.forEach(human => {
             this.$humanPlace.append(TemplateUtil.template(TemplateUtil.HUMAN, human));
@@ -16,7 +16,9 @@ class Human {
             this.viewLink($lastChild, ".fa-facebook-official");
             this.viewLink($lastChild, ".fa-instagram");
         })
-       
+       if (isMobile) {
+           $(".fab_hover").remove();
+       }
         return this;
     }
     viewDetail($lastChild) {
@@ -44,9 +46,9 @@ class Human {
             loop: true,
             margin: 10,
             dots: false,
-            autoplay: true,
+            // autoplay: true,
             autoplayHoverPause: true,
-            autoplayTimeout: 3000,
+            // autoplayTimeout: 3000,
             mouseDrag: false,
             responsive: {
                 0: {

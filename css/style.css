@@ -92,11 +92,12 @@ body {
         padding-right: 30px;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 441px) {
     .float-popup {
         width: 90%;
         font-size: 15px;
         height: 250px;
+        text-align: justify;
     }
     .float-popup .mCSB_container {
         padding-right: 20px;

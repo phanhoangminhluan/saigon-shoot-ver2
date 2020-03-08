@@ -24,7 +24,7 @@ class MainController{
         this.associate.render();
         this.product.render().applyScrollbar(isMobile);
         this.service.render().applyScrollbar(isMobile);
-        this.human.render().applyCarousel();
+        this.human.render(isMobile).applyCarousel();
         this.fanpage.render(isMobile);
         return this;
     }
