@@ -224,18 +224,21 @@ const fanpages = [
         name: "The Camera Studio",
         link: "https://www.facebook.com/TheCameraStudio.Official/",
         tab: "timeline",
-        width: 340
+        width: 340,
+        isAdaptToContainer: "false"
     },
     {
         name: "Saigon Shoot",
         link: "https://www.facebook.com/SaigonShoot/",
         tab: "timeline",
-        width: 340
+        width: 340,
+        isAdaptToContainer: "false"
     },
     {
         name: "The Camera House's",
         link: "https://www.facebook.com/TheCameraHouses/",
         tab: "timeline",
-        width: 340
+        width: 340,
+        isAdaptToContainer: "false"
     }
 ]

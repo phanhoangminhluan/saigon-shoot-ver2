@@ -70,11 +70,11 @@ const TemplateUtil = {
           <div 
                 class="fb-page" 
                 data-href="<%=link%>" 
-                data-tabs="" 
+                data-tabs="<%=tab%>" 
                 data-width="<%=width%>" 
                 data-height="" 
                 data-small-header="true" 
-                data-adapt-container-width="false" 
+                data-adapt-container-width="<%=isAdaptToContainer%>" 
                 data-hide-cover="false" 
                 data-show-facepile="true">
                     <blockquote 

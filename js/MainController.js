@@ -17,9 +17,11 @@ class MainController{
         this.service = new Service();
         this.human = new Human();
         this.fanpage = new Fanpage();
+        this.header = new Header();
     }
     render() {
         const isMobile = this.isMobile();
+        this.header.render(isMobile);
         this.slider.render().applyCarousel(); 
         this.associate.render();
         this.product.render().applyScrollbar(isMobile);
@@ -30,11 +32,11 @@ class MainController{
     }
     
     beforeRender() {
-        this.$all.mCustomScrollbar({
-            autoHideScrollbar: !0,
-            theme: "light",
-            mouseWheel: { preventDefault: true },
-        });
+        // this.$all.mCustomScrollbar({
+        //     autoHideScrollbar: !0,
+        //     theme: "light",
+        //     mouseWheel: { preventDefault: true },
+        // });
         this.$floatPopup.mCustomScrollbar({
             scrollButtons: { enable: !0 },
             theme: "dark-thick",
@@ -43,6 +45,8 @@ class MainController{
         });
     }
     applyScrollToSection() {
+        const isMobile = this.isMobile();
+        if (isMobile) return this;
         $(".section-link").on("click", function() {
             $(".all").mCustomScrollbar(
                 "scrollTo",

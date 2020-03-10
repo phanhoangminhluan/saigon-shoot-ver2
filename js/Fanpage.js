@@ -10,6 +10,7 @@ class Fanpage {
         fanpages.forEach(fanpage => {
             if (isMobile) {
                 fanpage.tab = "";
+                fanpage.isAdaptToContainer = "true"
             }
             _this.$listNews.append(TemplateUtil.template(TemplateUtil.FANPAGE, fanpage) );
         })

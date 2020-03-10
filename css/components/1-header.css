@@ -155,6 +155,7 @@ header {
     .header-content {
         flex-direction: column;
         padding-top: 15px;
+        padding-bottom: 15px;;
         margin: 0px auto;
     }
     .header-left-logo img{
