@@ -552,15 +552,15 @@ Bạn đã từng bị thu hút bởi những video có những hình ảnh vẽ
         serviceNameEng: "Studio for rent",
         serviceImage: "dv-7.jpg",
         serviceDescEng: `
-<br>Bạn là streamer? 
-<br><br>Bạn đang quản lý một shop online nào đó? 
-<br><br>Bạn đang cần tương tác với khách hàng?
-<br><br>Bạn đang tìm một địa điểm để chụp ảnh lookbook, chụp ảnh gia đình, chụp ảnh sản phẩm,…? 
-<br><br>Hay bạn đang cần quay một talkshow mà chưa có địa điểm phù hợp? 
-<br><br>Hãy đến với Feeling Media bạn sẽ được đáp ứng những nhu cầu này.
-<br><br>Chúng tôi chuyên cho thuê studio để phục vụ các nhu cầu về hình ảnh của bạn (quay phim, chụp ảnh, livestream, talkshow). 
-<br><br>Giá cả phù hợp, đạo cụ đầy đủ, có phục vụ nước uống tuỳ chọn.  
-<br><br>Hãy gọi cho chúng tôi nếu thấy phù hợp với nhu cầu của bạn nhé!
+<br> Are you a streamer?
+Advertising in an online store?
+<br> <br> Discounts and future with goods?
+<br> <br> Hardware only has a small part, important image, image
+<br> <br> Or choose to dial a conversation together
+<br> <br> Touch the media and feel about you.
+<br> <br> Our software leases your studio, costume and movie (video, photo, livestream, talkshow).
+<br> <br> Prices of aggregate, you like
+<br> <br> Our software is very like
         `,
         serviceDesc: `
 <br>Bạn là streamer? 
