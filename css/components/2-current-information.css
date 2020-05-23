@@ -17,7 +17,7 @@
         height: 800px;
     }
 }
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 1024px) {
     #slider-place .owl-item .item {
         height: auto;
     }

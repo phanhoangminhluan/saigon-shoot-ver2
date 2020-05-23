@@ -5,7 +5,9 @@ header {
     z-index: 19;
     width: 100%;
 }
-
+.mobile-flag {
+    display: none;
+}
 .header-content {
     font-family: "Oswald", sans-serif !important;
     display: flex;
@@ -142,7 +144,8 @@ header {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .header-left {
-        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     .header-left-logo img {
         width: 70px;
@@ -154,8 +157,73 @@ header {
         font-size: 15px;
     }
 }
+/* iPad Pro */
+@media screen and (max-width: 1024px) {
+    .mobile-flag {
+        display: block;
+    }
+    .mobile-flag img{
+        width: 100px;
+    }
+    header {
+        position: relative;
+    }
+    .header-content {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;;
+        margin: 0px auto;
+    }
+    .header-left-logo img{
+        width: 100px;
+    }
+
+    .header-left-title {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .header-left-title-company-name {
+        font-size: 35px;
+    }
+    .header-left-title-slogan {
+        font-size: 25px;
+    }
+}
+/* iPad */
+@media screen and (max-width: 768px) {
+    .mobile-flag {
+        display: block;
+    }
+    .mobile-flag img{
+        width: 87px;
+    }
+    header {
+        position: relative;
+    }
+    .header-content {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;;
+        margin: 0px auto;
+    }
+    .header-left-logo img{
+        width: 87px;
+    }
+
+    .header-left-title {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .header-left-title-company-name {
+        font-size: 30px;
+    }
+    .header-left-title-slogan {
+        font-size: 21px;
+    }
+}
 /* END OF HEADER RIGHT */
 
+/* iPhone 6/6Plus/X */
 @media screen and (max-width: 441px) {
     header {
         position: relative;
@@ -169,20 +237,25 @@ header {
     .header-left-logo img{
         width: 60px;
     }
+    .mobile-flag img{
+        width: 60px;
+    }
+
     .header-left-title {
         margin-left: 10px;
+        margin-right: 10px;
     }
     .header-left-title-company-name {
-        font-size: 20px;
+        font-size: 16px;
     }
     .header-left-title-slogan {
-        font-size: 15px;
+        font-size: 11px;
     }
     .header-right {
         width: 100%;
     }
     .header-right ul{
-       grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         font-size: 13px;
         grid-gap: 15px 10px;
         margin-bottom: 0px;

@@ -146,7 +146,7 @@ class MainController{
        //     return true;
        // }
         const width = window.innerWidth;
-        if (width <= 414) {
+        if (width <= 1024) {
            return true;
         }
        return false;
