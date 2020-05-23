@@ -223,7 +223,7 @@ header {
 }
 /* END OF HEADER RIGHT */
 
-/* iPhone 6/6Plus/X */
+/* iPhone 6Plus*/
 @media screen and (max-width: 441px) {
     header {
         position: relative;
@@ -247,6 +247,46 @@ header {
     }
     .header-left-title-company-name {
         font-size: 16px;
+    }
+    .header-left-title-slogan {
+        font-size: 11px;
+    }
+    .header-right {
+        width: 100%;
+    }
+    .header-right ul{
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 13px;
+        grid-gap: 15px 10px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+}
+
+/* iPhone 6*/
+@media screen and (max-width: 375px) {
+    header {
+        position: relative;
+    }
+    .header-content {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;;
+        margin: 0px auto;
+    }
+    .header-left-logo img{
+        width: 50px;
+    }
+    .mobile-flag img{
+        width: 30px;
+    }
+
+    .header-left-title {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .header-left-title-company-name {
+        font-size: 15px;
     }
     .header-left-title-slogan {
         font-size: 11px;
