@@ -24,8 +24,13 @@ header {
 }
 .header-left-title-company-name {
     text-transform: uppercase;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     margin-bottom: -2px;
+    color: #FEFD95;
+}
+.header-left-title-slogan {
+    text-align: center;
+    color: #FEFD95;
 }
 /* END OF HEADER LEFT */
 
@@ -112,13 +117,13 @@ header {
         align-items: flex-end;
     }
     .header-left-logo img {
-        width: 80px;
+        width: 100px;
     }
     .header-left-title-company-name {
-        font-size: 57px;
+        font-size: 35px;
     }
     .header-left-title-slogan {
-        font-size: 15px;
+        font-size: 20px;
         word-spacing: 2.3px;
     }
 }
@@ -127,6 +132,9 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     } */
+     .header-left-title-company-name {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .header-right ul {
@@ -140,10 +148,10 @@ header {
         width: 70px;
     }
     .header-left-title-company-name {
-        font-size: 49px;
+        font-size: 25px;
     }
     .header-left-title-slogan {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 /* END OF HEADER RIGHT */
@@ -165,10 +173,10 @@ header {
         margin-left: 10px;
     }
     .header-left-title-company-name {
-        font-size: 36px;
+        font-size: 25px;
     }
     .header-left-title-slogan {
-        font-size: 19px;
+        font-size: 15px;
     }
     .header-right {
         width: 100%;

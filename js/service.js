@@ -16,7 +16,23 @@ class Service {
         });
         return this;
     }
-
+    translate() {
+        var $serviceCols = this.$servicePlace.find(".col2");
+        if (LANG === EN) {
+            for (var i = 0; i < $serviceCols.length; i++) {
+                $($serviceCols[i])
+                    .find(".serivce-product-detail-hover > p")
+                    .html(services[i].serviceNameEng);
+    
+            }
+        } else {
+             for (var i = 0; i < $serviceCols.length; i++) {
+                 $($serviceCols[i])
+                     .find(".serivce-product-detail-hover > p")
+                     .html(services[i].serviceName);
+             }
+        }
+    }
     viewDetail(service) {
         var _this = this;
         var $lastserviceViewIcon = this.$servicePlace.find(
@@ -26,9 +42,15 @@ class Service {
             _this.$serviceDetail.css(showObj);
             _this.$overlay.css(showObj);
 
-            _this.$serviceDetail
-                .find(".mCSB_container")
-                .html(service.serviceDesc);
+            if (LANG == EN) {
+                _this.$serviceDetail
+                    .find(".mCSB_container")
+                    .html(service.serviceDescEng);
+            } else {
+                _this.$serviceDetail
+                    .find(".mCSB_container")
+                    .html(service.serviceDesc);
+            }
         });
     }
 

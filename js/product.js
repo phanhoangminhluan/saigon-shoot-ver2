@@ -14,7 +14,22 @@ class Product {
         });
         return this;
     }
-
+    translate() {
+        var $productCols = this.$productPlace.find(".col2");
+        if (LANG === EN) {
+            for (var i = 0; i < $productCols.length; i++) {
+                $($productCols[i])
+                    .find(".serivce-product-detail-hover > p")
+                    .html(products[i].productNameEng);
+            }
+        } else {
+            for (var i = 0; i < $productCols.length; i++) {
+                $($productCols[i])
+                    .find(".serivce-product-detail-hover > p")
+                    .html(products[i].productName);
+            }
+        }
+    }
     viewDetail(product) {
         var _this = this;
         var $lastProductViewIcon = this.$productPlace.find(".col2:last-child i");

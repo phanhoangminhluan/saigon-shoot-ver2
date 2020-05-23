@@ -12,31 +12,38 @@ class MainController{
         this.showObj = { opacity: "1", visibility: "visible" };
         this.hideObj = { opacity: "0", visibility: "hidden" };
         this.slider = new Slider();
+        this.intro = new Intro();
         this.associate = new Associate();
         this.product = new Product();
         this.service = new Service();
         this.human = new Human();
         this.fanpage = new Fanpage();
         this.header = new Header();
+        this.footer = new Footer();
     }
     render() {
         const isMobile = this.isMobile();
         this.header.render(isMobile);
         this.slider.render().applyCarousel(); 
+        this.intro.render();
         this.associate.render();
         this.product.render().applyScrollbar(isMobile);
         this.service.render().applyScrollbar(isMobile);
         this.human.render(isMobile).applyCarousel();
         this.fanpage.render(isMobile);
+        this.footer.render();
         return this;
     }
     
     beforeRender() {
-        // this.$all.mCustomScrollbar({
-        //     autoHideScrollbar: !0,
-        //     theme: "light",
-        //     mouseWheel: { preventDefault: true },
-        // });
+         const isMobile = this.isMobile();
+         if (!isMobile) {
+             this.$all.mCustomScrollbar({
+                 autoHideScrollbar: !0,
+                 theme: "light",
+                 mouseWheel: { preventDefault: true },
+             });
+         }
         this.$floatPopup.mCustomScrollbar({
             scrollButtons: { enable: !0 },
             theme: "dark-thick",
@@ -95,7 +102,6 @@ class MainController{
 
         var mainFlagLocation = $("#main-flag");
         var subFlagLocation = $("#sub-flag");
-
         $(".flag").on("click", function() {
             var imgSrcClicked = $(this)
                 .find("img")
@@ -104,7 +110,14 @@ class MainController{
             mainFlagLocation.find("img").attr("src", imgSrcClicked);
             subFlagLocation.find("img").attr("src", imgSrcRemained);
             $(".second-flag").css(_this.hideObj);
+            if (imgSrcClicked === "https://adl-foundation.adidas.com/prod/v18.4.1/assets/flags/vn.svg") {
+                LANG = VN;
+            } else {
+                LANG = EN;
+            }
+            _this.translate();
         });
+        
         return this;
     }
     isMobile() {
@@ -137,5 +150,22 @@ class MainController{
            return true;
         }
        return false;
+    }
+    translate() {
+        // menu
+        var menu = new Menu();
+        menu.translate();
+        // headings
+        var heading = new Heading();
+        heading.translate();
+        // intro
+        this.intro.translate();
+        // services
+        this.service.translate();
+        // product
+        this.product.translate();
+        // footer
+        this.footer.translate();
+
     }
 }

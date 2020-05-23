@@ -28,9 +28,15 @@ class Human {
                 _this.$humanDetail.css(showObj);
                 _this.$overlay.css(showObj);
 
-                _this.$humanDetail
-                    .find(".mCSB_container")
-                    .html(humanMap.get(id).humanDesc);
+                if (LANG === EN) {
+                    _this.$humanDetail
+                        .find(".mCSB_container")
+                        .html(humanMap.get(id).humanDescEng);
+                } else {
+                     _this.$humanDetail
+                         .find(".mCSB_container")
+                         .html(humanMap.get(id).humanDesc);
+                }
             });
     }
     viewLink($lastChild, cssSelector) {
