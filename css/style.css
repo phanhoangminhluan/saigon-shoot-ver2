@@ -41,7 +41,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    background-color:rgba(179,179,179,1)
+    background-color:#B37D29
 }
 .headings {
     font-family: "Oswald", sans-serif !important;
@@ -68,7 +68,7 @@ body {
 
 .float-popup {
     height: 450px;
-    background: #b3b3b3;
+    background: #B37D29
 }
 .product-detail-popup  {
     height: auto;
