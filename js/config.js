@@ -836,3 +836,24 @@ const footer = {
     Post production room: The Camera Studio, 36 Street 11, Town 6, Hiep Binh Chanh Ward, Thu Duc District (Sông Đà Resident)
     `,
 };
+
+const flag = {
+    mobileFlag: ` <li id="lang" class="mobile-flag" style="list-style-type: none;">
+                        <div class="flags" style="display: block; position: relative;">
+                            <a id="main-flag" class="flag" style="position: relative;">
+                                <img src="https://adl-foundation.adidas.com/prod/v18.4.1/assets/flags/vn.svg"
+                                     width="40px"/>
+                            </a>
+                            <div class='hover-flag'></div>
+                            <div id="sub-flag" class="second-flag" currentFlag="us">
+                                <a class="section-link flag" style="position: relative;">
+                                    <img src="https://adl-foundation.adidas.com/prod/v18.4.1/assets/flags/us.svg"
+                                         width="40px"/>
+
+                                </a>
+                                <div class='hover-flag'></div>
+                            </div>
+                        </div>
+                        <i id="show-flag" class="fa fa-angle-down"></i>
+                    </li>`,
+};

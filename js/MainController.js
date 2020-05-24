@@ -80,7 +80,7 @@ class MainController{
         var US_FLAG =
             "https://adl-foundation.adidas.com/prod/v18.4.1/assets/flags/us.svg";
 
-        $("#show-flag").on("click", function() {
+        $("#show-flag").on("click", function () {
             var secondFlag = $(".second-flag");
             if (secondFlag.css("opacity") === "1") {
                 secondFlag.css(_this.hideObj);
@@ -88,7 +88,7 @@ class MainController{
                 secondFlag.css(_this.showObj);
             }
         });
-
+        
         $(".flag").on("mouseenter", function() {
             $(this)
                 .next()
