@@ -601,43 +601,84 @@ Chúng ta đang sống trong thời đại marketing online đúng không?
 const associates = [
     {
         assId: "dt1",
-        assImage: "doitac-1.png"
+        assImage: "doitac-1.png",
     },
     {
         assId: "dt2",
-        assImage: "doitac-2.png"
+        assImage: "doitac-2.png",
     },
     {
         assId: "",
-        assImage: "doitac-3.png"
+        assImage: "doitac-3.png",
     },
     {
         assId: "",
-        assImage: "doitac-4.png"
+        assImage: "doitac-4.png",
     },
     {
         assId: "",
-        assImage: "doitac-5.png"
+        assImage: "doitac-5.png",
     },
     {
         assId: "",
-        assImage: "doitac-6.png"
+        assImage: "doitac-6.png",
     },
     {
         assId: "",
-        assImage: "doitac-7.png"
+        assImage: "doitac-7.png",
     },
     {
         assId: "",
-        assImage: "doitac-8.png"
+        assImage: "doitac-8.png",
     },
     {
         assId: "",
-        assImage: "doitac-9.png"
+        assImage: "doitac-9.png",
     },
     {
         assId: "",
-        assImage: "doitac-10.png"
+        assImage: "doitac-10.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-11.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-12.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-13.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-14.png",
+    },
+    ,
+    {
+        assId: "",
+        assImage: "doitac-15.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-16.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-17.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-18.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-19.png",
+    },
+    {
+        assId: "",
+        assImage: "doitac-20.png",
     }
 ];
 

@@ -1,6 +1,35 @@
+
+.associates img {
+    width: 190px;
+    padding: 10px;
+}
+.associate-row  {
+    padding: 30px;
+    /* float: left; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-gap: 30px; */
+    grid-row-gap: 90px;
+
+}
+@media screen and (max-width: 1024px) {
+    .associates img {
+    width: 125px;
+    padding: 10px;
+}
+   .associate-row {
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-gap: 15px;
+   }
+}
 @media screen and (max-width: 441px) {
+    .associates img {
+    width: 125px;
+    padding: 10px;
+}
    .associate-row {
        grid-template-columns: 1fr 1fr;
        grid-gap: 15px;
    }
 }
+

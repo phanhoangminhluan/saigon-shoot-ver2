@@ -13,21 +13,7 @@
     margin-top: 20px;
     font-size: 35px;
 }
-/* ASSOCIATES */
-.associates img {
-    width: 125px;
-    padding: 10px;
-}
-.associate-row  {
-    padding: 30px;
-    /* float: left; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    /* grid-gap: 30px; */
-    grid-row-gap: 100px;
 
-}
-/* END OF ASSOCIATES*/
 
 @media screen and (max-width: 441px) {
     .headings-black {
